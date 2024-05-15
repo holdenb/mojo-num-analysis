@@ -26,3 +26,13 @@ Python deps can be installed via `requirements.txt`.
 ## Resources
 
 * TODO
+
+## Current Progress
+
+### Lectures
+
+[] L1: Introduction, numerics, and error analysis (part I)
+
+### HW
+
+[] HW0
