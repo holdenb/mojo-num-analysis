@@ -1,6 +1,9 @@
+# RUN: %mojo %s | FileCheck %s
+
 from collections import List, Dict, Set
 from tensor import Tensor, TensorShape
 from math.limit import max_finite, min_finite
+from analysis.trait_ex import StealthCow, make_it_quack
 
 
 # Example of Dtypes (SIMD)
@@ -91,6 +94,10 @@ def main():
     # explicit ownership example
     var tensor = Tensor[DType.float32](256, 256)
     print_shape(tensor)
+
+    # traits example
+    var cow = StealthCow()
+    make_it_quack(cow)
 
     # https://docs.modular.com/mojo/manual/types
     describeDType[DType.float32]()
