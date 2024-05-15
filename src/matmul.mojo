@@ -55,7 +55,7 @@ struct Matrix[rows: Int, cols: Int]:
 
 def run_matmul_python() -> Float64:
     Python.add_to_path(".")
-    var pymatmul: PythonObject = Python.import_module("pymatmul")
+    var pymatmul: PythonObject = Python.import_module("src.py.pymatmul")
     var py = Python.import_module("builtins")
 
     var gflops = pymatmul.benchmark_matmul_python(128, 128, 128).to_float64()
@@ -65,7 +65,7 @@ def run_matmul_python() -> Float64:
 
 
 def run_matmul_numpy() -> Float64:
-    var pymatmul: PythonObject = Python.import_module("pymatmul")
+    var pymatmul: PythonObject = Python.import_module("src.py.pymatmul")
     var py = Python.import_module("builtins")
 
     var gflops = pymatmul.benchmark_matmul_numpy(M, N, K).to_float64()

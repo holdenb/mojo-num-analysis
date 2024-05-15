@@ -1,7 +1,7 @@
 # Simple program demonstrating a naive matrix multiplication in Python
 from timeit import timeit
 
-import check_mod
+import src.py.check_mod as check_mod
 
 check_mod.install_if_missing("numpy")
 import numpy as np
