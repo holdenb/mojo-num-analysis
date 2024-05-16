@@ -31,7 +31,7 @@ Python deps can be installed via `requirements.txt`.
 
 ### Lectures
 
-[] L1: Introduction, numerics, and error analysis (part I)
+[] L1: Introduction, numerics, and error analysis (I)
 
 ### HW
 
