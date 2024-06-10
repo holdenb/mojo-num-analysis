@@ -2,7 +2,6 @@
 
 from collections import List, Dict, Set
 from tensor import Tensor, TensorShape
-from math.limit import max_finite, min_finite
 from analysis.trait_ex import StealthCow, make_it_quack
 
 
@@ -10,8 +9,8 @@ from analysis.trait_ex import StealthCow, make_it_quack
 def describeDType[dtype: DType]():
     print(dtype, "is floating point:", dtype.is_floating_point())
     print(dtype, "is integral:", dtype.is_integral())
-    print("Min/max finite values for", dtype)
-    print(min_finite[dtype](), max_finite[dtype]())
+    # print("Min/max finite values for", dtype)
+    # print(min_finite[dtype](), max_finite[dtype]())
 
 
 # mutability
